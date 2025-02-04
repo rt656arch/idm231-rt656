@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Arcanenine';
+    src: url('./arcanenine.woff2') format('woff2');
+    
+}
+h1, p {
+    font-family: 'Arcanenine', sans-serif;
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+h1 {
+    font-size: 48px;
+    color: #b79776;
+    -webkit-text-stroke: 1px #7e5234;
+    margin-bottom: 5px;
+    transform: translateY(-150px);
+}
+p {
+    font-size: 24px;
+    color: #b79776;
+    -webkit-text-stroke: 1px #7e5234;
+    transform: translateY(-165px);
+}
+
+body {
+    background-image: url(../images/arcanebackg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.character-container {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+button {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+button:nth-child(1)  { transform: translate(-50%, -50%) rotate(0deg)   translate(350px) rotate(0deg); }  /* Top */
+button:nth-child(2)  { transform: translate(-50%, -50%) rotate(30deg)  translate(320px) rotate(-30deg); } 
+button:nth-child(3)  { transform: translate(-50%, -50%) rotate(60deg)  translate(300px) rotate(-60deg); }
+button:nth-child(4)  { transform: translate(-50%, -50%) rotate(90deg)  translate(300px) rotate(-90deg); }
+button:nth-child(5)  { transform: translate(-50%, -50%) rotate(120deg) translate(300px) rotate(-120deg); }
+button:nth-child(6)  { transform: translate(-50%, -50%) rotate(150deg) translate(320px) rotate(-150deg); }  
+button:nth-child(7)  { transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg); } /* Bottom */
+button:nth-child(8)  { transform: translate(-50%, -50%) rotate(210deg) translate(320px) rotate(-210deg); }
+button:nth-child(9)  { transform: translate(-50%, -50%) rotate(240deg) translate(300px) rotate(-240deg); }
+button:nth-child(10) { transform: translate(-50%, -50%) rotate(270deg) translate(300px) rotate(-270deg); }
+button:nth-child(11) { transform: translate(-50%, -50%) rotate(300deg) translate(300px) rotate(-300deg); }
+button:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translate(320px) rotate(-330deg); }
+
+.vi { background-image: url('../images/vi.jpg'); }
+.vander { background-image: url('../images/vander.jpg'); }
+.singed { background-image: url('../images/singed.jpg'); }
+.caitlyn { background-image: url('../images/caitlyn.webp'); }
+.sevika { background-image: url('../images/sevika.jpg'); }
+.viktor { background-image: url('../images/viktor.webp'); }
+.ekko { background-image: url('../images/ekko.webp'); }
+.silco { background-image: url('../images/silco.jpg'); }
+.heimerdinger { background-image: url('../images/heimerdinger.jpg'); }
+.mel { background-image: url('../images/mel.jpg'); }
+.jayce { background-image: url('../images/jayce.jpg'); }
+.jinx { background-image: url('../images/jinx.jpg'); }
