@@ -39,9 +39,10 @@ p {
 div.date-button button:nth-child(1){
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     align-items: center;
-    transform: translate(-50px, -110px);
+    text-align: center;
+    margin-top: 20px;
+    transform: translate(-61px, -110px);
 }
 
 .date-input {
@@ -99,18 +100,18 @@ button {
     background-position: center;
 }
 
-button:nth-child(1)  { transform: translate(-250px, -450px) ; } /*vi*/
-button:nth-child(2)  { transform: translate(-450px, -350px) ; } /*vander*/
-button:nth-child(3)  { transform: translate(-550px, -200px) ; } /*singed*/
-button:nth-child(4)  { transform: translate(-550px, 0px) ; } /*caitlyn*/
+button:nth-child(1)  { transform: translate(-250px, -375px) ; } /*vi*/
+button:nth-child(2)  { transform: translate(-450px, -275px) ; } /*vander*/
+button:nth-child(3)  { transform: translate(-550px, -125px) ; } /*singed*/
+button:nth-child(4)  { transform: translate(-550px, 15px) ; } /*caitlyn*/
 button:nth-child(5)  { transform: translate(-450px, 150px) ; } /*sevika*/
 button:nth-child(6)  { transform: translate(-250px, 250px) ; } /*viktor*/
-button:nth-child(7)  { transform: translate(300px) ; } /*ekko*/
-button:nth-child(8)  { transform: translate(300px) ; } /*silco*/
-button:nth-child(9)  { transform: translate(300px) ; } /*heimerdinger*/
-button:nth-child(10) { transform: translate(300px) ; } /*mel*/
-button:nth-child(11) { transform: translate(300px) ; } /*jayce*/
-button:nth-child(12) { transform: translate(300px) ; } /*jinx*/
+button:nth-child(7)  { transform: translate(125px, 250px) ; } /*ekko*/
+button:nth-child(8)  { transform: translate(325px, 150px) ; } /*silco*/
+button:nth-child(9)  { transform: translate(425px, 15px) ; } /*heimerdinger*/
+button:nth-child(10) { transform: translate(425px, -125px) ; } /*mel*/
+button:nth-child(11) { transform: translate(325px, -275px) ; } /*jayce*/
+button:nth-child(12) { transform: translate(125px, -375px) ; } /*jinx*/
 
 .vi { background-image: url('../images/vi.jpg'); }
 .vander { background-image: url('../images/vander.jpg'); }
