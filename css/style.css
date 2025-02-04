@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'Arcanenine';
     src: url('./arcanenine.woff2') format('woff2');
@@ -32,16 +35,20 @@ p {
     transform: translateY(-165px);
 }
 
-.date-button {
+
+div.date-button button:nth-child(1){
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    align-items: center;
+    transform: translate(-50px, -110px);
 }
 
 .date-input {
     width: 125px;
     height: 40px;
     font-size: 16px;
+    font-family: 'Arcanenine', sans-serif;
     color: black;
     background-color: #b79776;
     border: 2px solid #7e5234;
@@ -92,18 +99,18 @@ button {
     background-position: center;
 }
 
-button:nth-child(1)  { transform: translate(-50%, -50%) rotate(0deg)   translate(300px) rotate(0deg); }
-button:nth-child(2)  { transform: translate(-50%, -50%) rotate(30deg)  translate(300px) rotate(-30deg); }
-button:nth-child(3)  { transform: translate(-50%, -50%) rotate(60deg)  translate(300px) rotate(-60deg); }
-button:nth-child(4)  { transform: translate(-50%, -50%) rotate(90deg)  translate(300px) rotate(-90deg); }
-button:nth-child(5)  { transform: translate(-50%, -50%) rotate(120deg) translate(300px) rotate(-120deg); }
-button:nth-child(6)  { transform: translate(-50%, -50%) rotate(150deg) translate(300px) rotate(-150deg); }
-button:nth-child(7)  { transform: translate(-50%, -50%) rotate(180deg) translate(300px) rotate(-180deg); }
-button:nth-child(8)  { transform: translate(-50%, -50%) rotate(210deg) translate(300px) rotate(-210deg); }
-button:nth-child(9)  { transform: translate(-50%, -50%) rotate(240deg) translate(300px) rotate(-240deg); }
-button:nth-child(10) { transform: translate(-50%, -50%) rotate(270deg) translate(300px) rotate(-270deg); }
-button:nth-child(11) { transform: translate(-50%, -50%) rotate(300deg) translate(300px) rotate(-300deg); }
-button:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translate(300px) rotate(-330deg); }
+button:nth-child(1)  { transform: translate(-250px, -450px) ; } /*vi*/
+button:nth-child(2)  { transform: translate(-450px, -350px) ; } /*vander*/
+button:nth-child(3)  { transform: translate(-550px, -200px) ; } /*singed*/
+button:nth-child(4)  { transform: translate(-550px, 0px) ; } /*caitlyn*/
+button:nth-child(5)  { transform: translate(-450px, 150px) ; } /*sevika*/
+button:nth-child(6)  { transform: translate(-250px, 250px) ; } /*viktor*/
+button:nth-child(7)  { transform: translate(300px) ; } /*ekko*/
+button:nth-child(8)  { transform: translate(300px) ; } /*silco*/
+button:nth-child(9)  { transform: translate(300px) ; } /*heimerdinger*/
+button:nth-child(10) { transform: translate(300px) ; } /*mel*/
+button:nth-child(11) { transform: translate(300px) ; } /*jayce*/
+button:nth-child(12) { transform: translate(300px) ; } /*jinx*/
 
 .vi { background-image: url('../images/vi.jpg'); }
 .vander { background-image: url('../images/vander.jpg'); }
