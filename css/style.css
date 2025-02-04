@@ -24,11 +24,29 @@ h1 {
     margin-bottom: 5px;
     transform: translateY(-150px);
 }
+
 p {
     font-size: 24px;
     color: #b79776;
     -webkit-text-stroke: 1px #7e5234;
     transform: translateY(-165px);
+}
+
+.date-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.date-input {
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    color: black;
+    background-color: #b79776;
+    border: 2px solid #7e5234;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 body {
