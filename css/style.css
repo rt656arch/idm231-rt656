@@ -24,15 +24,16 @@ h1 {
     font-size: 48px;
     color: #b79776;
     -webkit-text-stroke: 1px #7e5234;
-    margin-bottom: 5px;
-    transform: translateY(-150px);
+    margin: 0;
+    transform: translateY(-195px);
 }
 
 p {
     font-size: 24px;
     color: #b79776;
     -webkit-text-stroke: 1px #7e5234;
-    transform: translateY(-165px);
+    margin-top: 20px;
+    transform: translateY(-190px);
 }
 
 
@@ -41,8 +42,7 @@ div.date-button button:nth-child(1){
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
-    transform: translate(-61px, -110px);
+    transform: translate(-61px, -135px);
 }
 
 .date-input {
@@ -78,6 +78,7 @@ body {
     width: 100vw;
     position: relative;
 }
+
 .character-container {
     width: 1000px;
     height: 300px;
