@@ -74,19 +74,18 @@ button {
     background-position: center;
 }
 
-
-button:nth-child(1)  { transform: translate(-50%, -50%) rotate(0deg)   translate(350px) rotate(0deg); }  /* Top */
-button:nth-child(2)  { transform: translate(-50%, -50%) rotate(30deg)  translate(320px) rotate(-30deg); } 
+button:nth-child(1)  { transform: translate(-50%, -50%) rotate(0deg)   translate(300px) rotate(0deg); }
+button:nth-child(2)  { transform: translate(-50%, -50%) rotate(30deg)  translate(300px) rotate(-30deg); }
 button:nth-child(3)  { transform: translate(-50%, -50%) rotate(60deg)  translate(300px) rotate(-60deg); }
 button:nth-child(4)  { transform: translate(-50%, -50%) rotate(90deg)  translate(300px) rotate(-90deg); }
 button:nth-child(5)  { transform: translate(-50%, -50%) rotate(120deg) translate(300px) rotate(-120deg); }
-button:nth-child(6)  { transform: translate(-50%, -50%) rotate(150deg) translate(320px) rotate(-150deg); }  
-button:nth-child(7)  { transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg); } /* Bottom */
-button:nth-child(8)  { transform: translate(-50%, -50%) rotate(210deg) translate(320px) rotate(-210deg); }
+button:nth-child(6)  { transform: translate(-50%, -50%) rotate(150deg) translate(300px) rotate(-150deg); }
+button:nth-child(7)  { transform: translate(-50%, -50%) rotate(180deg) translate(300px) rotate(-180deg); }
+button:nth-child(8)  { transform: translate(-50%, -50%) rotate(210deg) translate(300px) rotate(-210deg); }
 button:nth-child(9)  { transform: translate(-50%, -50%) rotate(240deg) translate(300px) rotate(-240deg); }
 button:nth-child(10) { transform: translate(-50%, -50%) rotate(270deg) translate(300px) rotate(-270deg); }
 button:nth-child(11) { transform: translate(-50%, -50%) rotate(300deg) translate(300px) rotate(-300deg); }
-button:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translate(320px) rotate(-330deg); }
+button:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translate(300px) rotate(-330deg); }
 
 .vi { background-image: url('../images/vi.jpg'); }
 .vander { background-image: url('../images/vander.jpg'); }
