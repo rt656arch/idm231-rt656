@@ -1,36 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylenew.css">
+    <script src="preload.js"></script>
 </head>
+
 <body>
-    <div class="text-container">
-        <h1> Arcane Zodiac </h1>
-        <p> Enter your birthday </p>
-        <div class="date-button">
-            <button class="date-input">mm/dd/yyyy</button>
+    <!-- Zodiac buttons -->
+    <main class="container">
+        <button id="Caitlyn">
+            <img class="zodButtons" src="images/caitlyn.webp" alt="Caitlyn image">
+        </button>
+        <button id="Ekko">
+            <img class="zodButtons" src="images/ekko.webp" alt="Ekko image">
+        </button>
+        <button id="Heimerdinger">
+            <img class="zodButtons" src="images/heimerdinger.jpg" alt="Heimerdinger image">
+        </button>
+        <button id="Jayce">
+            <img class="zodButtons" src="images/jayce.jpg" alt="Jayce image">
+        </button>
+        <button id="Jinx">
+            <img class="zodButtons" src="images/jinx.jpg" alt="Jinx image">
+        </button>
+        <button id="Mel">
+            <img class="zodButtons" src="images/mel.jpg" alt="Mel image">
+        </button>
+        <button id="Sevika">
+            <img class="zodButtons" src="images/sevika.jpg" alt="Sevika image">
+        </button>
+        <button id="Silco">
+            <img class="zodButtons" src="images/silco.jpg" alt="Silco image">
+        </button>
+        <button id="Singed">
+            <img class="zodButtons" src="images/singed.jpg" alt="Singed image">
+        </button>
+        <button id="Vander">
+            <img class="zodButtons" src="images/vander.jpg" alt="Vander image">
+        </button>
+        <button id="Vi">
+            <img class="zodButtons" src="images/vi.jpg" alt="Vi image">
+        </button>
+        <button id="Viktor">
+            <img class="zodButtons" src="images/viktor.webp" alt="Viktor image">
+        </button>
+
+            <!-- Add a form with input date field -->
+        <div class="birthForm">
+            <form action="">
+                <input type="date" id="zBirthday" required>
+            </form>
         </div>
+        <div class="submit">
+            <button id="zSubmit">SUBMIT</button>
+        </div>
+
+        <div class="h1">
+            <h1>Arcane Zodiac</h1>
+        </div>
+
+        <div class="direction">
+            <p>Enter your birthday</p>
+        </div>
+    </main>
+
+    <div id="DisplayArea" class="hideMe">
+        <h2 id="zName">ZOD Name</h2>
+        <img id="zImage" src="images/arcane_bg.jpg" alt="arcane background">
+        <h4 id="zDateRange">Start - End</h4>
+        <p id="zDescription">Main description of the zod character goes here and it will be wonderful</p>
+        <button id="CloseBtn">Close</button>
     </div>
-    <div class="info-button">
-        <button class="info"> ?</button>
-    </div>
-    <div class="character-container">
-        <button class="vi"></button>
-        <button class="vander"></button>
-        <button class="singed"></button>
-        <button class="caitlyn"></button>
-        <button class="sevika"></button>
-        <button class="viktor"></button>
-        <button class="ekko"></button>
-        <button class="silco"></button>
-        <button class="heimerdinger"></button>
-        <button class="mel"></button>
-        <button class="jayce"></button>
-        <button class="jinx"></button>
-    </div>
+
+
+
+
+    <script src="postload.js"></script> 
 </body>
+
 </html>
