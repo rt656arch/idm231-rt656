@@ -200,9 +200,9 @@ button:active {
     display: grid;
     place-content: start center;
 
-    font-size: 24px;
+    font-size: 28px;
     color: #b79776;
-    -webkit-text-stroke: 1px #7e5234;
+    -webkit-text-stroke: 1.5px #7e5234;
 }
 .birthForm {
     grid-column: 5;
