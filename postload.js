@@ -248,7 +248,11 @@ submitObj.addEventListener('click', function() {
           }
           displayZodInfo(astrological_sign);
     } else {
-        alert('Please enter a valid date');
+        zNameObj.innerHTML = 'ERROR';
+        zImageObj.src = 'images/errorImg.jpg';
+        zDateRangeObj.innerHTML = 'Oops!';
+        zDescriptionObj.innerHTML = "Invalid date entered";
+        DisplayAreaObj.classList.remove("hideMe");
     }
     // Convert date to a zodiac sign
     // Display that zodiac sign info in popup

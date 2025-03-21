@@ -177,6 +177,11 @@ button:active {
 
 }
 
+#DisplayArea button {
+    width: 100px;
+    height: 50px;
+}
+
 /* use a class to hide Display Area */
 .hideMe {
     display: none;
@@ -210,7 +215,7 @@ button:active {
     grid-row: 5;
 
     display: grid;
-    place-content: center;
+    place-content: start center;
 }
 
 .submit {
@@ -218,13 +223,15 @@ button:active {
     grid-row: 5;
 
     display: grid;
-    justify-content: end;
+    place-content: start end;
 }
 
 #zSubmit {
-    font-size: 14px;
-    width: 50px;
-    height: 50px;
+    font-size: 15px;
+    color: #b79776;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .info {
@@ -245,7 +252,6 @@ button:active {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,4 +273,18 @@ button:active {
 
 .popup-content button {
     margin-top: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.credits {
+    grid-column: 4 / 8;
+    grid-row: 8;
+
+    display: grid;
+    place-content: end center;
+
+    font-size: 16px;
+    color: #b79776;
+    -webkit-text-stroke: 1px #7e5234;
 }
