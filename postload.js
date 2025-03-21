@@ -12,11 +12,18 @@ const VanderObj = document.getElementById("Vander");
 const ViObj = document.getElementById("Vi");
 const ViktorObj = document.getElementById("Viktor");
 
+
 // Display Object
 const zNameObj = document.getElementById("zName");
 const zImageObj = document.getElementById("zImage");
 const zDateRangeObj = document.getElementById("zDateRange");
 const zDescriptionObj = document.getElementById("zDescription");
+
+const zodiacInfo = document.getElementById("zodiacInfo");
+
+const zInfoButton = document.getElementById("zInfo");
+const closeInfoBtn = document.getElementById("closeInfoBtn");
+const infoDisplay = document.getElementById("infoDisplay");
 
 // Close Mode
 const DisplayAreaObj = document.getElementById("DisplayArea");
@@ -64,112 +71,134 @@ ViktorObj.addEventListener('click', function() {
 function displayZodInfo(whichOne) {
     // console.log('displayZodInfo called ' + whichOne);
     zNameObj.innerHTML = whichOne;
+    DisplayAreaObj.classList.remove("hideMe");
 
     switch (whichOne) {
         case 'Caitlyn':
             zImageObj.src = 'images/caitlyn.webp';
             zDateRangeObj.innerHTML = 'June 21 .. July 22';
-            zDescriptionObj.innerHTML = 'Sweet like a cupcake, emotionally intelligent, nurturing (especially with Vi), extremely stubborn (disobeys orders from her superiors and her mother), moody, calm but capable of explosive anger when upset.';
+            zDescriptionObj.innerHTML = 'Emotionally intelligent, nurturing, extremely stubborn, challenges authority, moody, calm but capable of explosive anger when upset.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('bloop');
+            playAudio('caitlyn');
             break;
         case 'Ekko':
             zImageObj.src = 'images/ekko.webp';
             zDateRangeObj.innerHTML = 'September 23 .. October 22';
-            zDescriptionObj.innerHTML = 'Seeks harmony and peace, regrets fighting Jinx almost immediately. A talented artist (his murals speak for themselves), has a strong sense of justice (leader of the Firelights), and struggles with a savior complex like many Libras.';
+            zDescriptionObj.innerHTML = 'Seeks harmony and peace, avoids hurting those close to them, has a strong sense of justice, and struggles with a savior complex.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('chimes');
+            playAudio('ekko');
             break;
         case 'Heimerdinger':
             zImageObj.src = 'images/heimerdinger.jpg';
             zDateRangeObj.innerHTML = 'November 22 - December 21';
-            zDescriptionObj.innerHTML = 'The philosopher-scientist archetype of Sagittarius. Wise, curious, and loves discovering new things about the world.';
+            zDescriptionObj.innerHTML = 'Wise, curious, loves discovering new things about the world, and sticks to tradition.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('heimerdinger');
             break;
         case 'Jayce':
             zImageObj.src = 'images/jayce.jpg';
             zDateRangeObj.innerHTML = 'January 20 – February 18';
-            zDescriptionObj.innerHTML = 'Strong Aquarius vibes. Believes in progress, extremely altruistic and forward-thinking. Very intelligent and thinks outside the box to solve social problems.';
+            zDescriptionObj.innerHTML = 'Believes in progress, extremely altruistic, forward-thinking, intelligent, politically inclined, and thinks outside the box.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('jayce');
             break;
         case 'Jinx':
             zImageObj.src = 'images/jinx.jpg';
             zDateRangeObj.innerHTML = 'February 19 – March 20';
-            zDescriptionObj.innerHTML = 'A storm of inner chaos, childlike, overflowing with imagination. Crafty, dreamy, ruled by her emotions, has a big heart (e.g., with Isha), but suffers from deep insecurity that makes her crumble at the slightest instability.';
+            zDescriptionObj.innerHTML = 'A storm of inner chaos, childlike, overflowing with imagination, crafty, dreamy, ruled by emotions, has a big heart, suffers from deep insecurity, prone to breaking down at the slightest instability.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('jinx');
             break;
         case 'Mel':
             zImageObj.src = 'images/mel.jpg';
             zDateRangeObj.innerHTML = 'December 22 – January 19';
-            zDescriptionObj.innerHTML = 'Ambitious, deeply affected by being ostracized from her powerful family. The wealthiest woman in Piltover with the most intriguing public career on the council. Constantly seeks to fortify her position.';
+            zDescriptionObj.innerHTML = 'Ambitious, emotionally intelligent, manipulative, has family issues, prone to success, climbs corporate ladder easily, seeks to fortify their current standing.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('mel');
             break;
         case 'Sevika':
             zImageObj.src = 'images/sevika.jpg';
             zDateRangeObj.innerHTML = 'July 23 – August 22';
-            zDescriptionObj.innerHTML = 'Seeks attention from Silco, courageous with a generous heart deep down, highly ambitious, wants to lead Zaun’s rebellion, constantly strives for self-fulfillment.';
+            zDescriptionObj.innerHTML = 'Seeks attention from authority figures, courageous, has a generous heart, highly ambitious, loyal to a cause rather people, could step up to be a leader, and constantly strives for self-fulfillment.';
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('sevika');
             break;
         case 'Silco':
             zImageObj.src = 'images/silco.jpg';
             zDateRangeObj.innerHTML = 'October 23–November 21';
-            zDescriptionObj.innerHTML = "Fascinated by taboo, transformation, and uncovering hidden depths (like the monster within us). Driven by profound ideas for Zaun's revolution.";
+            zDescriptionObj.innerHTML = "Fascinated by taboo, transformation, and uncovering hidden depths. Driven by profound ideas for revolution.";
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('silco');
             break;
         case 'Singed':
             zImageObj.src = 'images/singed.jpg';
             zDateRangeObj.innerHTML = 'May 21 – June 20';
-            zDescriptionObj.innerHTML = "Highly intelligent, cunning, double-sided (works for Silco but ultimately prioritizes his own gain), very curious (eager to see the shimmer's effects on Vander).";
+            zDescriptionObj.innerHTML = "Highly intelligent, cunning, double-sided, scientifically-inclined, and extremely curious.";
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('singed');
             break;
         case 'Vander':
             zImageObj.src = 'images/vander.jpg';
             zDateRangeObj.innerHTML = 'April 20 – May 20';
-            zDescriptionObj.innerHTML = "Grounded, pragmatic (shown in his deal with the enforcers in Season 1), values material security to be happy, runs a bar (Tauruses love simple pleasures like drinking), deeply loves his family—even as Warwick.";
+            zDescriptionObj.innerHTML = "Grounded, pragmatic, values material security, business-owner, loves simple pleasures, deeply loves their family.";
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('vander');
             break;
         case 'Vi':
             zImageObj.src = 'images/vi.jpg';
             zDateRangeObj.innerHTML = 'March 21 – April 19';
-            zDescriptionObj.innerHTML = "Fiery temperament, acts and fights before thinking, natural leader (evident with Claggor and Mylo when young, and later with Caitlyn and during the finale), short-tempered, no patience, hyper-energetic.";
+            zDescriptionObj.innerHTML = "Fiery temperament, acts and fights before thinking, natural leader, short-tempered, impatient, family-oriented, and hyper-energetic.";
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('vi');
             break;
         case 'Viktor':
             zImageObj.src = 'images/viktor.webp';
             zDateRangeObj.innerHTML = 'August 23 – September 22';
-            zDescriptionObj.innerHTML = "Self-sacrificing, extremely intelligent, methodical, modest, lives to serve others—even after gaining immense power, he uses it to benefit his community and Zaun instead of ruling tyrannically. Very Virgo-like.";
+            zDescriptionObj.innerHTML = "Self-sacrificing, extremely intelligent, methodical, modest, lives to serve others—even after gaining immense power.";
             DisplayAreaObj.classList.remove("hideMe");
             // Play Audio for this character
-            // playAudio('crack');
+            playAudio('viktor');
             break;
         default:
             console.log('ERROR WRONG ONE!');
     }
 }
 
+zInfoButton.addEventListener("click", function() {
+    zodiacInfo.innerHTML = "Enter your birthday and you will find out which Arcane zodiac you are!";
+    infoDisplay.style.display = "flex";
+});
+
+closeInfoBtn.addEventListener('click', function() {
+    infoDisplay.style.display = "none";
+});
+
 CloseBtnObj.addEventListener('click', function() {
     DisplayAreaObj.classList.add("hideMe");
 });
+
+// Play Audio funtion
+const allAudios = document.querySelectorAll('audio');
+function playAudio(whichSound) {
+    allAudios.forEach(thisAudio => {
+        thisAudio.pause();
+        // reset sound file back to start 
+        thisAudio.currentTime = 0; 
+    });
+    document.getElementById(whichSound).play();
+}
+
 
 // Input Date and Submit code below
 //
